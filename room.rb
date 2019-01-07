@@ -20,4 +20,10 @@ class Room
     @guests.delete(guest)
   end
 
+  def empty_room
+    while guest_count() > 0
+      @guests.pop
+    end
+  end
+
 end

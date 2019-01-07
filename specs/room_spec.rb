@@ -17,8 +17,12 @@ class RoomTest < MiniTest::Test
     assert_equal(2, @room.capacity)
   end
 
-  def test_guests_empty
+  def test_guests_getter
     assert_equal([], @room.guests)
+  end
+
+  def test_count_guests
+    assert_equal(0, @room.guest_count)
   end
 
 end
